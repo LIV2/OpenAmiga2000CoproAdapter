@@ -1,8 +1,7 @@
 EESchema Schematic File Version 4
-LIBS:OpenAmiga2000CoproAdapter-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "OpenAmiga2000CoproAdapter"
@@ -37,7 +36,7 @@ F 3 "DOCUMENTATION" H 8520 3690 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_2 P1
+L OpenAmiga2000CoproAdapter-rescue:CONN_2-conn P1
 U 1 1 5BD58FAD
 P 6740 2330
 F 0 "P1" H 6609 2017 40  0000 C CNN
@@ -798,8 +797,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 3260 2140 3260
 Wire Wire Line
-	2450 3360 2140 3360
-Wire Wire Line
 	2450 3460 2140 3460
 Text Label 2140 2260 0    50   ~ 0
 ~bgack
@@ -816,9 +813,9 @@ Wire Wire Line
 Wire Wire Line
 	2450 5060 2140 5060
 Text Label 2140 5060 0    50   ~ 0
-~rst
+~cpurst
 Text Label 2140 4960 0    50   ~ 0
-~hlt
+~cpuhlt
 Text Label 2140 3260 0    50   ~ 0
 ~vma
 Wire Wire Line
@@ -845,7 +842,7 @@ Text Label 9530 3890 0    50   ~ 0
 ~vpa
 Text Label 9530 3990 0    50   ~ 0
 e
-Text Label 2140 3360 0    50   ~ 0
+Text Label 1440 3360 0    50   ~ 0
 e
 Text Label 2140 3460 0    50   ~ 0
 ~vpa
@@ -864,7 +861,7 @@ Text Label 2140 1960 0    50   ~ 0
 Text Label 2140 2060 0    50   ~ 0
 ~ipl2
 $Comp
-L conn:CONN_2 P4
+L OpenAmiga2000CoproAdapter-rescue:CONN_2-conn P4
 U 1 1 5BE8DD57
 P 1770 2330
 F 0 "P4" V 1910 2380 40  0000 R CNN
@@ -875,7 +872,7 @@ F 3 "" H 1770 2330 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:CONN_2 P3
+L OpenAmiga2000CoproAdapter-rescue:CONN_2-conn P3
 U 1 1 5BE8DECE
 P 1390 2330
 F 0 "P3" V 1530 2370 40  0000 R CNN
@@ -886,7 +883,7 @@ F 3 "" H 1390 2330 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:CONN_2 P2
+L OpenAmiga2000CoproAdapter-rescue:CONN_2-conn P2
 U 1 1 5BE8DF26
 P 1030 2330
 F 0 "P2" V 1170 2370 40  0000 R CNN
@@ -940,7 +937,7 @@ Text Label 7260 3290 0    50   ~ 0
 fc2
 Connection ~ 9420 1690
 $Comp
-L conn:CONN_1 P99
+L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P99
 U 1 1 5BD852B0
 P 6790 7680
 F 0 "P99" H 6650 7760 40  0000 L CNN
@@ -954,7 +951,7 @@ NoConn ~ 6790 7530
 Wire Wire Line
 	9420 1690 9420 6250
 $Comp
-L conn:CONN_1 P8
+L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P8
 U 1 1 5C6A5338
 P 9650 2090
 F 0 "P8" H 9709 2090 40  0000 L CNN
@@ -965,7 +962,7 @@ F 3 "" H 9650 2090 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_1 P9
+L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P9
 U 1 1 5C6A5554
 P 9650 2190
 F 0 "P9" H 9709 2190 40  0000 L CNN
@@ -976,7 +973,7 @@ F 3 "" H 9650 2190 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_1 P10
+L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P10
 U 1 1 5C6A5637
 P 9650 2290
 F 0 "P10" H 9709 2290 40  0000 L CNN
@@ -987,7 +984,7 @@ F 3 "" H 9650 2290 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_1 P11
+L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P11
 U 1 1 5C6A56D1
 P 9650 2390
 F 0 "P11" H 9709 2390 40  0000 L CNN
@@ -998,18 +995,7 @@ F 3 "" H 9650 2390 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_1 P12
-U 1 1 5C6A5776
-P 9650 2490
-F 0 "P12" H 9709 2490 40  0000 L CNN
-F 1 "CONN_1" H 9600 2530 30  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9650 2490 50  0001 C CNN
-F 3 "" H 9650 2490 50  0001 C CNN
-	1    9650 2490
-	1    0    0    -1  
-$EndComp
-$Comp
-L conn:CONN_1 P13
+L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P13
 U 1 1 5C6A57FA
 P 9650 2590
 F 0 "P13" H 9709 2590 40  0000 L CNN
@@ -1028,11 +1014,9 @@ Wire Wire Line
 Wire Wire Line
 	9270 2390 9500 2390
 Wire Wire Line
-	9270 2490 9500 2490
-Wire Wire Line
 	9270 2590 9500 2590
 $Comp
-L conn:CONN_1 P5
+L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P5
 U 1 1 5C731E0D
 P 7340 1990
 F 0 "P5" H 7260 2020 40  0000 C CNN
@@ -1043,7 +1027,7 @@ F 3 "" H 7340 1990 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_1 P6
+L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P6
 U 1 1 5C73200C
 P 7340 2090
 F 0 "P6" H 7260 2120 40  0000 C CNN
@@ -1054,7 +1038,7 @@ F 3 "" H 7340 2090 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_1 P7
+L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P7
 U 1 1 5C7320AF
 P 7340 2290
 F 0 "P7" H 7260 2320 40  0000 C CNN
@@ -1071,7 +1055,7 @@ Wire Wire Line
 Wire Wire Line
 	7490 2290 7770 2290
 $Comp
-L conn:CONN_1 P15
+L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P15
 U 1 1 5C76E7B4
 P 10280 1990
 F 0 "P15" H 10339 1990 40  0000 L CNN
@@ -1082,7 +1066,7 @@ F 3 "" H 10280 1990 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:CONN_1 P14
+L OpenAmiga2000CoproAdapter-rescue:CONN_1-conn P14
 U 1 1 5C76E822
 P 10280 1890
 F 0 "P14" H 10339 1890 40  0000 L CNN
@@ -1097,17 +1081,535 @@ Wire Wire Line
 Connection ~ 9780 1890
 Wire Wire Line
 	10010 1990 10130 1990
+Connection ~ 10010 1990
+$Comp
+L 74xx:74HC74 U2
+U 2 1 601C3C15
+P 1810 10350
+F 0 "U2" H 1810 10831 50  0000 C CNN
+F 1 "74HC74" H 1810 10740 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1810 10350 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 1810 10350 50  0001 C CNN
+	2    1810 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC74 U2
+U 3 1 601C4F63
+P 7850 10000
+F 0 "U2" H 8080 10046 50  0000 L CNN
+F 1 "74HC74" H 8080 9955 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7850 10000 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 7850 10000 50  0001 C CNN
+	3    7850 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U3
+U 1 1 601C6609
+P 2860 9350
+F 0 "U3" H 2860 9675 50  0000 C CNN
+F 1 "74HC00" H 2860 9584 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2860 9350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 2860 9350 50  0001 C CNN
+	1    2860 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U3
+U 2 1 601C8172
+P 1910 8000
+F 0 "U3" H 1910 8325 50  0000 C CNN
+F 1 "74HC00" H 1910 8234 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1910 8000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 1910 8000 50  0001 C CNN
+	2    1910 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U3
+U 3 1 601C98FB
+P 1910 8600
+F 0 "U3" H 1910 8925 50  0000 C CNN
+F 1 "74HC00" H 1910 8834 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1910 8600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 1910 8600 50  0001 C CNN
+	3    1910 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U3
+U 4 1 601CC4E0
+P 3110 8250
+F 0 "U3" H 3110 8575 50  0000 C CNN
+F 1 "74HC00" H 3110 8484 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3110 8250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3110 8250 50  0001 C CNN
+	4    3110 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U3
+U 5 1 601CF267
+P 6600 10000
+F 0 "U3" H 6830 10046 50  0000 L CNN
+F 1 "74HC00" H 6830 9955 50  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6600 10000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6600 10000 50  0001 C CNN
+	5    6600 10000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2110 9250 2310 9250
+Wire Wire Line
+	2310 9250 2310 9800
+Wire Wire Line
+	2310 9800 1410 9800
+Wire Wire Line
+	1410 9800 1410 10250
+Wire Wire Line
+	1410 10250 1510 10250
+Text Label 1810 9650 3    50   ~ 0
+~rst
+Text Label 1810 10650 3    50   ~ 0
+~rst
+Text Label 1510 10350 2    50   ~ 0
+v7m
+Text Label 1510 9350 2    50   ~ 0
+v7m
+Text Label 2110 10250 0    50   ~ 0
+~BR
+Text Label 2110 10450 0    50   ~ 0
+BR
+Wire Wire Line
+	2560 9450 2410 9450
+Wire Wire Line
+	2410 9450 2410 9750
+Wire Wire Line
+	2410 9750 2960 9750
+Connection ~ 2410 9450
+Wire Wire Line
+	2410 9450 2110 9450
+Text Label 2960 9750 2    50   ~ 0
+~BOSS
+Wire Wire Line
+	1610 7900 1610 8000
+Wire Wire Line
+	1610 8000 1360 8000
+Connection ~ 1610 8000
+Wire Wire Line
+	1610 8000 1610 8100
+Text Label 1360 8000 0    50   ~ 0
+~cbg
+Wire Wire Line
+	2210 8000 2210 8200
+Wire Wire Line
+	2210 8200 1610 8200
+Wire Wire Line
+	1610 8200 1610 8500
+Wire Wire Line
+	2210 8600 2560 8600
+Wire Wire Line
+	2560 8600 2560 9250
+Text Label 1610 8700 2    50   ~ 0
+~as
+$Comp
+L 74xx:74HC74 U2
+U 1 1 601C3582
+P 1810 9350
+F 0 "U2" H 1810 9831 50  0000 C CNN
+F 1 "74HC74" H 1810 9740 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1810 9350 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 1810 9350 50  0001 C CNN
+	1    1810 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3160 8800 1260 8800
+Wire Wire Line
+	1260 8800 1260 9250
+Wire Wire Line
+	1260 9250 1510 9250
+Wire Wire Line
+	3160 8800 3160 9350
+Wire Wire Line
+	2810 8150 2810 8250
+$Comp
+L power:GND #PWR0101
+U 1 1 60336342
+P 2810 8250
+F 0 "#PWR0101" H 2810 8000 50  0001 C CNN
+F 1 "GND" H 2815 8077 50  0000 C CNN
+F 2 "" H 2810 8250 50  0001 C CNN
+F 3 "" H 2810 8250 50  0001 C CNN
+	1    2810 8250
+	0    1    1    0   
+$EndComp
+Connection ~ 2810 8250
+Wire Wire Line
+	2810 8250 2810 8350
+NoConn ~ 3410 8250
+$Comp
+L Transistor_FET:2N7002 Q4
+U 1 1 603616B5
+P 4400 8350
+F 0 "Q4" V 4742 8350 50  0000 C CNN
+F 1 "2N7002" V 4651 8350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 8275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 4400 8350 50  0001 L CNN
+	1    4400 8350
+	0    1    -1   0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q6
+U 1 1 60368B80
+P 4900 8350
+F 0 "Q6" V 5242 8350 50  0000 C CNN
+F 1 "2N7002" V 5151 8350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 8275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 4900 8350 50  0001 L CNN
+	1    4900 8350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 8250 4600 8250
+Wire Wire Line
+	4400 8550 4650 8550
+Text Label 5100 8250 0    50   ~ 0
+~rst
+Wire Wire Line
+	4650 8550 4650 8750
+Wire Wire Line
+	4650 8750 4200 8750
+Connection ~ 4650 8550
+Wire Wire Line
+	4650 8550 4900 8550
+Text Label 4200 8750 0    50   ~ 0
+~BR
+Wire Wire Line
+	4200 8250 3950 8250
+$Comp
+L Transistor_FET:2N7002 Q1
+U 1 1 6042102F
+P 3850 8450
+F 0 "Q1" H 4054 8496 50  0000 L CNN
+F 1 "2N7002" H 4054 8405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4050 8375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 3850 8450 50  0001 L CNN
+	1    3850 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6042683E
+P 3950 8650
+F 0 "#PWR0102" H 3950 8400 50  0001 C CNN
+F 1 "GND" H 3955 8477 50  0000 C CNN
+F 2 "" H 3950 8650 50  0001 C CNN
+F 3 "" H 3950 8650 50  0001 C CNN
+	1    3950 8650
+	1    0    0    -1  
+$EndComp
+Text Label 3650 8450 2    50   ~ 0
+BR
+Wire Wire Line
+	3950 8250 3650 8250
+Connection ~ 3950 8250
+Text Label 3650 8250 0    50   ~ 0
+~cpurst
+$Comp
+L Transistor_FET:2N7002 Q5
+U 1 1 6045194D
+P 4400 9300
+F 0 "Q5" V 4742 9300 50  0000 C CNN
+F 1 "2N7002" V 4651 9300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 9225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 4400 9300 50  0001 L CNN
+	1    4400 9300
+	0    1    -1   0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q7
+U 1 1 60451953
+P 4900 9300
+F 0 "Q7" V 5242 9300 50  0000 C CNN
+F 1 "2N7002" V 5151 9300 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 9225 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 4900 9300 50  0001 L CNN
+	1    4900 9300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 9200 4600 9200
+Wire Wire Line
+	4400 9500 4650 9500
+Text Label 5100 9200 0    50   ~ 0
+~hlt
+Wire Wire Line
+	4650 9500 4650 9700
+Wire Wire Line
+	4650 9700 4200 9700
+Connection ~ 4650 9500
+Wire Wire Line
+	4650 9500 4900 9500
+Text Label 4200 9700 0    50   ~ 0
+~BR
+Wire Wire Line
+	4200 9200 3950 9200
+$Comp
+L Transistor_FET:2N7002 Q2
+U 1 1 60451962
+P 3850 9400
+F 0 "Q2" H 4054 9446 50  0000 L CNN
+F 1 "2N7002" H 4054 9355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4050 9325 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 3850 9400 50  0001 L CNN
+	1    3850 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60451968
+P 3950 9600
+F 0 "#PWR0103" H 3950 9350 50  0001 C CNN
+F 1 "GND" H 3955 9427 50  0000 C CNN
+F 2 "" H 3950 9600 50  0001 C CNN
+F 3 "" H 3950 9600 50  0001 C CNN
+	1    3950 9600
+	1    0    0    -1  
+$EndComp
+Text Label 3650 9400 2    50   ~ 0
+BR
+Wire Wire Line
+	3950 9200 3650 9200
+Connection ~ 3950 9200
+Text Label 3650 9200 0    50   ~ 0
+~cpuhlt
+Wire Wire Line
+	9270 2490 9650 2490
+Text Label 9650 2490 2    50   ~ 0
+~BOSS
+$Comp
+L Transistor_FET:2N7002 Q3
+U 1 1 604C2A8C
+P 3850 10100
+F 0 "Q3" H 4054 10146 50  0000 L CNN
+F 1 "2N7002" H 4054 10055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4050 10025 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 3850 10100 50  0001 L CNN
+	1    3850 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 604C45A3
+P 3950 10300
+F 0 "#PWR0104" H 3950 10050 50  0001 C CNN
+F 1 "GND" H 3955 10127 50  0000 C CNN
+F 2 "" H 3950 10300 50  0001 C CNN
+F 3 "" H 3950 10300 50  0001 C CNN
+	1    3950 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 9900 5100 9900
+Text Label 5100 9900 2    50   ~ 0
+~cbr
+Text Label 3650 10100 2    50   ~ 0
+BR
+Wire Wire Line
+	7850 9500 7850 9600
+Wire Wire Line
+	7850 10500 7850 10400
+$Comp
+L power:GND #PWR0105
+U 1 1 6054005E
+P 6600 10500
+F 0 "#PWR0105" H 6600 10250 50  0001 C CNN
+F 1 "GND" H 6605 10327 50  0000 C CNN
+F 2 "" H 6600 10500 50  0001 C CNN
+F 3 "" H 6600 10500 50  0001 C CNN
+	1    6600 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 60540718
+P 7850 10500
+F 0 "#PWR0106" H 7850 10250 50  0001 C CNN
+F 1 "GND" H 7855 10327 50  0000 C CNN
+F 2 "" H 7850 10500 50  0001 C CNN
+F 3 "" H 7850 10500 50  0001 C CNN
+	1    7850 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 605409A4
+P 6600 9500
+F 0 "#PWR0107" H 6600 9350 50  0001 C CNN
+F 1 "+5V" H 6615 9673 50  0000 C CNN
+F 2 "" H 6600 9500 50  0001 C CNN
+F 3 "" H 6600 9500 50  0001 C CNN
+	1    6600 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 60541061
+P 7850 9500
+F 0 "#PWR0108" H 7850 9350 50  0001 C CNN
+F 1 "+5V" H 7865 9673 50  0000 C CNN
+F 2 "" H 7850 9500 50  0001 C CNN
+F 3 "" H 7850 9500 50  0001 C CNN
+	1    7850 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0110
+U 1 1 605880D4
+P 810 8850
+F 0 "#PWR0110" H 810 8700 50  0001 C CNN
+F 1 "+5V" H 825 9023 50  0000 C CNN
+F 2 "" H 810 8850 50  0001 C CNN
+F 3 "" H 810 8850 50  0001 C CNN
+	1    810  8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6058937B
+P 6150 10000
+F 0 "C1" H 6265 10046 50  0000 L CNN
+F 1 "C" H 6265 9955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6188 9850 50  0001 C CNN
+F 3 "~" H 6150 10000 50  0001 C CNN
+	1    6150 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 60589758
+P 7400 10000
+F 0 "C2" H 7515 10046 50  0000 L CNN
+F 1 "C" H 7515 9955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7438 9850 50  0001 C CNN
+F 3 "~" H 7400 10000 50  0001 C CNN
+	1    7400 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 605A1F4D
+P 7400 9850
+F 0 "#PWR0111" H 7400 9700 50  0001 C CNN
+F 1 "+5V" H 7415 10023 50  0000 C CNN
+F 2 "" H 7400 9850 50  0001 C CNN
+F 3 "" H 7400 9850 50  0001 C CNN
+	1    7400 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 605A2327
+P 6150 9850
+F 0 "#PWR0112" H 6150 9700 50  0001 C CNN
+F 1 "+5V" H 6165 10023 50  0000 C CNN
+F 2 "" H 6150 9850 50  0001 C CNN
+F 3 "" H 6150 9850 50  0001 C CNN
+	1    6150 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 605A272B
+P 6150 10150
+F 0 "#PWR0113" H 6150 9900 50  0001 C CNN
+F 1 "GND" H 6155 9977 50  0000 C CNN
+F 2 "" H 6150 10150 50  0001 C CNN
+F 3 "" H 6150 10150 50  0001 C CNN
+	1    6150 10150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 605A2BD9
+P 7400 10150
+F 0 "#PWR0114" H 7400 9900 50  0001 C CNN
+F 1 "GND" H 7405 9977 50  0000 C CNN
+F 2 "" H 7400 10150 50  0001 C CNN
+F 3 "" H 7400 10150 50  0001 C CNN
+	1    7400 10150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 601C856D
+P 1840 3360
+F 0 "JP2" H 1840 3473 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1840 3474 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1840 3360 50  0001 C CNN
+F 3 "~" H 1840 3360 50  0001 C CNN
+	1    1840 3360
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1990 3360 2450 3360
+Wire Wire Line
+	1440 3360 1690 3360
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 60212D15
+P 810 9050
+F 0 "JP1" V 810 9117 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 855 9118 50  0001 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 810 9050 50  0001 C CNN
+F 3 "~" H 810 9050 50  0001 C CNN
+	1    810  9050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	960  9050 1810 9050
+Wire Wire Line
+	960  9050 960  10050
+Connection ~ 960  9050
+Wire Wire Line
+	960  10050 1810 10050
+$Comp
+L power:GND #PWR0109
+U 1 1 6035D9BF
+P 810 9250
+F 0 "#PWR0109" H 810 9000 50  0001 C CNN
+F 1 "GND" H 815 9077 50  0000 C CNN
+F 2 "" H 810 9250 50  0001 C CNN
+F 3 "" H 810 9250 50  0001 C CNN
+	1    810  9250
+	1    0    0    -1  
+$EndComp
+Text Notes 650  8910 0    50   ~ 0
+ON
+Text Notes 620  9210 0    50   ~ 0
+OFF
+Wire Notes Line
+	5510 7500 5510 10870
+Wire Notes Line
+	5510 10870 570  10870
+Wire Notes Line
+	570  10870 570  7500
+Wire Notes Line
+	570  7500 5510 7500
 Wire Bus Line
 	10530 5390 10530 6100
 Wire Bus Line
 	10530 900  10530 4490
 Wire Bus Line
-	6510 900  6510 4390
-Wire Bus Line
 	6510 4590 6510 6100
 Wire Bus Line
-	4960 1400 4960 3860
+	6510 900  6510 4390
 Wire Bus Line
 	4960 3950 4960 5560
-Connection ~ 10010 1990
+Wire Bus Line
+	4960 1400 4960 3860
+Text Notes 800  7470 0    50   ~ 0
+Arbitrate bus away from mainboard CPU\nKeeps coprocessor in reset and isolates it's halt + reset until BG is asserted then we assert BOSS and release BR
 $EndSCHEMATC
