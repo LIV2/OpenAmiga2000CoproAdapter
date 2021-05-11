@@ -1,3 +1,5 @@
+# !!!!WIP!!! THIS DOES NOT WORK, DON'T WASTE YOUR MONEY BUILDING THIS!
+
 # OpenAmiga2000CoproAdapter
 OpenAmiga2000CoproAdapter is an Open Hardware adapter that allows installing the main processor of a Commodore Amiga 2000 computer in the co-processor slot.
 
