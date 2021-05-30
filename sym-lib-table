@@ -1,4 +1,8 @@
 (sym_lib_table
-  (lib (name A2000_COPRO_SLOT)(type Legacy)(uri ${KIPRJMOD}/libs/A2000_COPRO_SLOT.lib)(options "")(descr "A2000 Copro Slot"))
-  (lib (name OpenAmiga2000CoproAdapter-rescue)(type Legacy)(uri ${KIPRJMOD}/OpenAmiga2000CoproAdapter-rescue.lib)(options "")(descr ""))
+  (lib (name "A2000_COPRO_SLOT")(type "Legacy")(uri "${KIPRJMOD}/libs/A2000_COPRO_SLOT.lib")(options "")(descr "A2000 Copro Slot"))
+  (lib (name "OpenAmiga2000CoproAdapter-rescue")(type "Legacy")(uri "${KIPRJMOD}/OpenAmiga2000CoproAdapter-rescue.lib")(options "")(descr ""))
+  (lib (name "74CBDT3384")(type "KiCad")(uri "${KIPRJMOD}/libs/74CBDT3384.kicad_sym")(options "")(descr ""))
+  (lib (name "XC9572VQ44")(type "Legacy")(uri "${KIPRJMOD}/libs/XC9572VQ44.lib")(options "")(descr ""))
+  (lib (name "ap2210n")(type "KiCad")(uri "${KIPRJMOD}/libs/ap2210n.kicad_sym")(options "")(descr ""))
+  (lib (name "74CBTD3306")(type "KiCad")(uri "${KIPRJMOD}/libs/74CBTD3306.kicad_sym")(options "")(descr ""))
 )
