@@ -1,4 +1,30 @@
 # OpenAmiga2000CoproAdapter
+
+# A2000 Boss Experiment
+This branch contains the code and pcb for a coprocessor containing a CPLD that allows host CPU takeover by doing proper bus arbitration
+This doesn't completely work, E/VPA/VMA doesn't work properly causing CIA issues...
+
+__I forgot to route DTACK to the CPLD, you will need to cut the DTACK trace, connect the socket's DTACK to TP1 and the Slot's DTACK to TP2__
+
+## Theory of operation
+This holds the coprocessor in a reset state until BOSS is asserted, doing so requires us to isolate some signals as the 68000 does not tristate them during DMA or HALT:
+
+* Reset
+* Halt
+* RW
+* LDS
+* UDS
+* AS
+* BG
+* BR
+* FC0-2
+
+Most of these are routed through the CPLD to acheive this except RESET/HALT which are bidirectional signals and necessitated a CBT buffer - but most if not all of these would be better served using a buffer rather than wasting CPLD resources
+
+It is also necessary to generate an internal E clock (the 68k does not ever stop driving this) and generate VPA/DTACK around that to handle the CIA VPA/VMA stuff in a way that results in reliable operation. I still haven't figured this out yet...
+
+
+
 OpenAmiga2000CoproAdapter is an Open Hardware adapter that allows installing the main processor of a Commodore Amiga 2000 computer in the co-processor slot.
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/OpenAmiga2000CoproAdapter/master/doc/render-top.png)
